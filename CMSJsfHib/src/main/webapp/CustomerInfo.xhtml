@@ -1,0 +1,43 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:form style="background-color: #f2f2f2; padding: 20px;">
+	<ui:include src="/CustomerMenu.xhtml" />
+    <div style="margin-top: 30px;">
+	    <p style="font-size:20px; font-weight: bold; color: #4CAF50;">Customer Information</p>
+        <hr style="border: 1px solid #4CAF50; margin-top: 10px;" />
+	    <p style="margin-top: 20px;">
+	    <span style="font-weight: bold;">Customer Id :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{customerInfo.custId}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">Customer Name :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{customerInfo.custName}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">Customer User Name :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{customerInfo.custUserName}"/>
+	    </b> <br/>
+	
+	    <span style="font-weight: bold;">Customer Password :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{customerInfo.custPassword}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">Customer Email :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{customerInfo.custEmail}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">Customer Phone :</span> 
+        <b style="color: blue;">
+		    <h:outputLabel value="#{customerInfo.custPhoneNo}"/>
+	    </b> <br/>
+        </p>
+    </div>
+</h:form>
+</html>
+        

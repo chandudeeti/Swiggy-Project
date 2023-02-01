@@ -1,0 +1,17 @@
+127.0.0.1 - - [22/Jan/2023:19:43:36 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:43:37 +0530] "GET /CMSJsfHib/faces/Thanks.xhtml HTTP/1.1" 200 1394
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:43:37 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:44:40 +0530] "POST /CMSJsfHib/faces/Thanks.xhtml HTTP/1.1" 200 1205
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:44:54 +0530] "POST /CMSJsfHib/faces/CustomerLogin.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:44:54 +0530] "GET /CMSJsfHib/faces/CustomerDashBoard.xhtml HTTP/1.1" 200 6425
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:44:54 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:08 +0530] "POST /CMSJsfHib/faces/CustomerDashBoard.xhtml HTTP/1.1" 200 7566
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:08 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:14 +0530] "POST /CMSJsfHib/faces/CustomerInfo.xhtml HTTP/1.1" 200 7165
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:14 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:21 +0530] "POST /CMSJsfHib/faces/CustomerWallet.xhtml HTTP/1.1" 200 8224
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:21 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:32 +0530] "POST /CMSJsfHib/faces/ShowRestaurant.xhtml HTTP/1.1" 200 7006
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:45:32 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:49:54 +0530] "POST /CMSJsfHib/faces/RestaurantMenu.xhtml HTTP/1.1" 200 8126
+0:0:0:0:0:0:0:1 - - [22/Jan/2023:19:49:54 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -

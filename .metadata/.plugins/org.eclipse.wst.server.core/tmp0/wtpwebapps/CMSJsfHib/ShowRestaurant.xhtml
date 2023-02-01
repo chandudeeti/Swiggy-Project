@@ -1,0 +1,51 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      <h:form>
+      	<ui:include src="CustomerMenu.xhtml"/>
+      	<center>
+      		<h2><h:outputText value="Restaurant Details"/> </h2>
+      		<div class="row">
+      		<div class = "col-1"></div>
+      		<div class = "col-10">
+      		<div class="col-md-auto border rounded-2 p-3 shadow-lg">
+      		<h:dataTable value="#{rDao.showRestaurants()}" class="table"
+      		
+      		var="e" border="">
+      			<h:column>
+      				<f:facet name="header"> Restaurant Id</f:facet>
+      				#{e.restaurantId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Restaurant Name</f:facet>
+      				#{e.restaurantName}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Branch</f:facet>
+      				#{e.branch}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> City</f:facet>
+      				#{e.city}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Mobile No</f:facet>
+      				#{e.mobileNo}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Email</f:facet>
+      				#{e.email}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Rating</f:facet>
+      				#{e.rating}
+      			</h:column>
+      		</h:dataTable>
+      		</div>
+      		</div>
+      		</div>
+      	</center>
+      </h:form>
+      </html>

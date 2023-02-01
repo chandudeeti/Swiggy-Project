@@ -1,0 +1,17 @@
+package com.cmsJsf;
+
+import java.util.concurrent.TimeUnit;
+
+public class OrderMain {
+	
+	public static void main(String[] args) {
+		
+		OrdersDAOImpl impl = new OrdersDAOImpl();
+		
+		String order = impl.placeOrder(4, 7, 21, "PAYTM", 3, "NIL");
+		System.out.println(order);
+		System.out.println(TimeUnit.MINUTES);
+		
+	}
+
+}

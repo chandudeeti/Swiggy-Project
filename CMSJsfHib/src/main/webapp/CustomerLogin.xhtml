@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<body>
+ <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.12.6/dist/umd/popper.min.js" 
+        integrity="sha384-/0j2PjTb9/KjJh/0fU6e1u6lSjV7OuGKP8o7/v+m4XFhKj6DUx7PA+Bb6zS7VuS" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"/>
+ </head>
+    
+  <h:form style="width: 500px; margin: 0 auto;">
+    User Name : 
+    <h:inputText id="userName" value="#{customer.custUserName}" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box;"/> <br/><br/> 
+    Password : 
+    <h:inputSecret value="#{customer.custPassword}" style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box;"/> <br/><br/> 
+    <h:commandButton value="Login" action="#{cDao.validateMe(customer)}" class="btn btn-success" />
+    <p>
+      <h:outputLabel value="#{errorMessage}" style="color: red; font-weight: bold;"/>
+    </p>
+  </h:form>
+</body>
+</html>

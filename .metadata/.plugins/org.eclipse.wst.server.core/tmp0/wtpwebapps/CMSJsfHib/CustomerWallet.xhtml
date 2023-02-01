@@ -1,0 +1,42 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      <h:form>
+      	<ui:include src="CustomerMenu.xhtml"/>
+      	<center>
+      		<h2><h:outputText value="Customer Wallet"> </h:outputText> </h2>
+      		
+      		<div class="row">
+      		<div class = "col-3"></div>
+      		<div class = "col-6">
+      
+      		<div class="col-md-auto border rounded-2 p-3 shadow-lg">
+      		<h:dataTable value="#{wDao.showCustomerWalletDao(customerInfo.custId)}" class="table"
+      		
+      		
+      		var="e" border="">
+      			<h:column>
+      				<f:facet name="header"> Customer Id</f:facet>
+      				#{e.custId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Wallet Id</f:facet>
+      				#{e.walletId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Wallet Type</f:facet>
+      				#{e.walletSource}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Wallet Amount</f:facet>
+      				#{e.walletAmount}
+      			</h:column>
+      		</h:dataTable>
+      		</div>
+      		</div>
+      		</div>
+      	</center>
+      </h:form>
+      </html>

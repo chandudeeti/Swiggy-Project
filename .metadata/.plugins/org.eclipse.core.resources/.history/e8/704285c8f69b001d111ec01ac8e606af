@@ -1,0 +1,78 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      <h:form>
+      	<ui:include src="VendorMenu.xhtml"/>
+      	<center>
+      		<h2><h:outputText value="Order Details"/> </h2>
+      		<div class="row">
+      		<!-- <div class = "col-1"></div> showOrdersByVendor(vendorInfo.vendorId) -->
+      		<div class = "col-12">
+      		<div class="col-md-auto border rounded-2 p-3 shadow-lg">
+      		<h:dataTable value="#{oDao.showOrdersByVendor(vendorInfo.vendorId)}"
+      		
+      		var="e" border="" class="table">
+      			<h:column>
+      				<f:facet name="header">Order Id</f:facet>
+      				#{e.orderId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Customer Id</f:facet>
+      				#{e.custId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Vendor Id</f:facet>
+      				#{e.venId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header"> Menu Id</f:facet>
+      				#{e.menuId}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header">Wallet Source</f:facet>
+      				#{e.walSource}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header">Order Date</f:facet>
+      				#{e.orderDate}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header">Quantity</f:facet>
+      				#{e.orderQuantity}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header">Amount</f:facet>
+      				#{e.orderBillAmount}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header">Status</f:facet>
+      				#{e.orderStatus}
+      			</h:column>
+      			<h:column>
+      				<f:facet name="header">Comments</f:facet>
+      				#{e.orderComments}
+      			</h:column>
+      			<h:column>
+      			<f:facet name="header"> Accept </f:facet>
+      				<h:commandButton value="ACCEPT" style="margin:20px"
+		action="#{oDao.approve(e.orderId)}" ajax="false" class="btn btn-success"/>
+      			</h:column>
+      			<h:column>
+      			<f:facet name="header"> Reject </f:facet>
+      				<h:commandButton value="Reject" style="margin:20px"
+		action="#{oDao.rejectOrder(e.orderId)}" ajax="false" class="btn btn-danger" />
+      			</h:column>
+      			<h:column>
+      			<f:facet name="header"> Reject </f:facet>
+      				<h:commandButton value="Auto Reject" style="margin:20px"
+		action="#{oDao.rejectOrder(e.orderId))}" ajax="false" class="btn btn-warning" />
+      			</h:column>
+      		</h:dataTable>
+      		</div>
+      		</div>
+      		</div>
+      	</center>
+      </h:form>
+      </html>

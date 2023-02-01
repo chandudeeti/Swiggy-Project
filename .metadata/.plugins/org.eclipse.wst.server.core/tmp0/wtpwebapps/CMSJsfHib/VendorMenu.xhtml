@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.12.6/dist/umd/popper.min.js"
+	integrity="sha384-/0j2PjTb9/KjJh/0fU6e1u6lSjV7OuGKP8o7/v+m4XFhKj6DUx7PA+Bb6zS7VuS"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	crossorigin="anonymous" />
+</head>
+<body style="background-color: #f2f2f2;">
+	<!-- <p style="font-size: 30px; text-align: center; font-weight: bold;">
+		Welcome to Customer Menu Page...</p>
+	<p style="text-align: center;">
+		Welcome &nbsp;&nbsp;<b style="font-size: 40px; color: red;"> <h:outputLabel
+				value="#{vendorInfo.vendorName}" />
+		</b>
+	</p>
+
+	<div style="text-align: center; margin-top: 50px;">
+		<h:commandLink id="image-link-id" action="VendorInfo.xhtml"
+			style="text-decoration: none; color: black; 
+            padding: 20px 40px; background-color: #4CAF50; border-radius: 5px;">
+			<h:outputText value="Vendor Info"></h:outputText>
+		</h:commandLink>
+		&nbsp; &nbsp; &nbsp;
+		<h:commandLink id="image_link_rest" action="ShowOrders.xhtml"
+			style="text-decoration: none; color: black; 
+            padding: 20px 40px; background-color: #4CAF50; border-radius: 5px;">
+			<h:outputText value="Show Orders" />
+		</h:commandLink>
+		&nbsp; &nbsp; &nbsp;
+
+	</div>
+	<hr style="border: 1px solid blue; margin-top: 50px;" /> -->
+
+	<div class="container">
+		<h1 class="text-center">Welcome to Vendor Menu Page...</h1>
+		<p class="text-center">
+			Welcome to <b> <h:outputLabel value="#{vendorInfo.vendorName}" />
+			</b>
+		</p>
+		<div class="text-center">
+			<h:commandLink id="image-link-id" action="VendorInfo.xhtml"
+				class="btn btn-primary m-2">
+				<h:outputText value="Vendor Info"></h:outputText>
+			</h:commandLink>
+			<h:commandLink id="image_link_emp" action="ShowOrders.xhtml"
+				class="btn btn-primary m-2">
+				<h:outputText value="Show Orders" />
+			</h:commandLink>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<h:commandLink id="image_link_emple" action="Thanks.xhtml"
+				class="btn btn-primary m-2">
+				<h:outputText value="Menu Page" />
+			</h:commandLink>
+		</div>
+	</div>
+	</body>
+</html>

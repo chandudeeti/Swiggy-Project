@@ -1,0 +1,43 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:form style="background-color: #f2f2f2; padding: 20px;">
+	<ui:include src="/VendorMenu.xhtml" />
+    <div style="margin-top: 30px;">
+	    <p style="font-size:20px; font-weight: bold; color: #4CAF50;">Vendor Information</p>
+        <hr style="border: 1px solid #4CAF50; margin-top: 10px;" />
+	    <p style="margin-top: 20px;">
+	    <span style="font-weight: bold;">Vendor Id :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{vendorInfo.vendorId}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">Vendor Name :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{vendorInfo.vendorName}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">vendor User Name :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{vendorInfo.userName}"/>
+	    </b> <br/>
+	
+	    <span style="font-weight: bold;">Vendor Password :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{vendorInfo.password}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">Vendor Email :</span> 
+	    <b style="color: blue;">
+		    <h:outputLabel value="#{vendorInfo.email}"/>
+	    </b> <br/>
+	    <span style="font-weight: bold;">vendor Phone :</span> 
+        <b style="color: blue;">
+		    <h:outputLabel value="#{vendorInfo.phoneNo}"/>
+	    </b> <br/>
+        </p>
+    </div>
+</h:form>
+</html>
+        

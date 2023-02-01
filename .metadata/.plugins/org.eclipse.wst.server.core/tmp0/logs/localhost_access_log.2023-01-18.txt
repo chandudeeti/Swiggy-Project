@@ -1,0 +1,14 @@
+127.0.0.1 - - [18/Jan/2023:09:01:46 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:01:47 +0530] "GET /CMSJsfHib/faces/Thanks.xhtml HTTP/1.1" 200 1393
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:01:47 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:01:47 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:02:02 +0530] "POST /CMSJsfHib/faces/Thanks.xhtml HTTP/1.1" 200 1205
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:02:12 +0530] "POST /CMSJsfHib/faces/CustomerLogin.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:02:12 +0530] "GET /CMSJsfHib/faces/CustomerDashBoard.xhtml HTTP/1.1" 200 5708
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:02:12 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:02:17 +0530] "POST /CMSJsfHib/faces/CustomerDashBoard.xhtml HTTP/1.1" 200 6852
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:02:17 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:06:04 +0530] "GET /CMSJsfHib/faces/Thanks.xhtml HTTP/1.1" 200 1393
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:06:04 +0530] "GET /CMSJsfHib/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:06:04 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [18/Jan/2023:09:06:32 +0530] "POST /CMSJsfHib/faces/Thanks.xhtml HTTP/1.1" 200 1206
